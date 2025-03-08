@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HEADER */
+header {
+  background-color: brown;
+  height: 10vh;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem 2rem 6rem;
+  animation: slideInTopToBottom 2s forwards;
+}
+
+.navbar .nav-logo .logo-text {
+  color: white;
+  font-size: 3rem;
+}
+
+.navbar .nav-menu {
+  display: flex;
+  gap: 3rem;
+}
+
+.navbar .nav-menu .nav-link {
+  font-size: 2.5rem;
+  padding: 1rem 1.8rem;
+  color: white;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+.navbar .nav-menu .nav-link:hover {
+  background-color: orange;
+  color: red;
+}
+
+/* HERO */
+.hero {
+  min-height: 90vh;
+  background-color: brown;
+  padding: 0 6rem 0 6rem;
+}
+
+.hero .hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.hero .hero-content .hero-details {
+  animation: slideInLeftToRight 2s forwards;
+}
+
+.hero .hero-content .hero-details h2 {
+  font-family: "Miniver", sans-serif;
+  font-size: 4rem;
+  color: orange;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.hero .hero-content .hero-details h3 {
+  margin-top: 0.8rem;
+  font-size: 2.8rem;
+  width: 70%;
+  font-weight: bold;
+}
+
+.hero .hero-content .hero-details p {
+  margin-top: 1rem;
+  font-size: 1.7rem;
+  width: 80%;
+}
+
+.buttons {
+  margin-top: 3rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.buttons button {
+  font-size: 2rem;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 2rem;
+}
+
+.buttons .order {
+  background-color: orange;
+  color: red;
+  border: 2px solid orange;
+  cursor: pointer;
+}
+
+.buttons .recruitment {
+  color: white;
+  background-color: brown;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.buttons .order:hover {
+  color: white;
+  background-color: brown;
+  border: 2px solid white;
+  transition: 0.3s ease;
+}
+
+.buttons .recruitment:hover {
+  color: red;
+  background-color: orange;
+  border: 2px solid orange;
+  transition: 0.3s ease;
+}
+
+.hero-image img {
+  height: 60rem;
+  width: 60rem;
+  animation: slideInRightToLeft 2s forwards;
+}
+
+@keyframes slideInRightToLeft {
+  0% {
+    transform: translateX(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeftToRight {
+  0% {
+    transform: translateX(-10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInTopToBottom {
+  0% {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* @media (min-width: 1025px) {
+  html {
+    font-size: 55%;
+  }
+} */
+
+/* @media (min-width: 769px) and (max-width: 1024px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+} */
