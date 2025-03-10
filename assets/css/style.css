@@ -17,8 +17,8 @@ a {
 
 /* HEADER */
 header {
-  background-color: brown;
-  height: 10vh;
+  background: linear-gradient(to right, #001824, #00283e, #003852);
+  min-height: 10vh;
 }
 
 header .navbar {
@@ -48,14 +48,14 @@ header .navbar {
 }
 
 .navbar .nav-menu .nav-link:hover {
-  background-color: orange;
-  color: red;
+  background-color: #ffb74d;
+  color: #00283e;
 }
 
 /* HERO */
 .hero {
   min-height: 90vh;
-  background-color: brown;
+  background: linear-gradient(135deg, #001824, #00283e, #003852, #004b6e);
   padding: 0 6rem 0 6rem;
 }
 
@@ -68,12 +68,13 @@ header .navbar {
 
 .hero .hero-content .hero-details {
   animation: slideInLeftToRight 2s forwards;
+  color: #e5e5e5;
 }
 
 .hero .hero-content .hero-details h2 {
   font-family: "Miniver", sans-serif;
   font-size: 4rem;
-  color: orange;
+  color: #ffb74d;
   font-weight: 900;
   font-style: italic;
 }
@@ -83,12 +84,14 @@ header .navbar {
   font-size: 2.8rem;
   width: 70%;
   font-weight: bold;
+  color: #f5f5f5;
 }
 
 .hero .hero-content .hero-details p {
   margin-top: 1rem;
   font-size: 1.7rem;
   width: 80%;
+  color: #bdbdbd;
 }
 
 .buttons {
@@ -101,34 +104,37 @@ header .navbar {
   font-size: 2rem;
   padding: 1rem 2rem 1rem 2rem;
   border-radius: 2rem;
+  color: #001824;
 }
 
 .buttons .order {
-  background-color: orange;
-  color: red;
-  border: 2px solid orange;
+  color: #001824;
+  text-decoration: none;
+  background-color: #ffb74d;
+  border: 2px solid #ffb74d;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .buttons .recruitment {
-  color: white;
-  background-color: brown;
-  border: 2px solid white;
+  color: #001824;
+  background-color: #ffb74d;
+  border: 2px solid #ffb74d;
   cursor: pointer;
+  transition: 0.3s ease;
+  text-decoration: none;
 }
 
 .buttons .order:hover {
-  color: white;
-  background-color: brown;
-  border: 2px solid white;
-  transition: 0.3s ease;
+  background-color: #f5f5f5;
+  color: #00283e;
+  border: 2px solid #f5f5f5;
 }
 
 .buttons .recruitment:hover {
-  color: red;
-  background-color: orange;
-  border: 2px solid orange;
-  transition: 0.3s ease;
+  background-color: #ffb74d;
+  color: #00283e;
+  border: 2px solid #ffb74d;
 }
 
 .hero-image img {
@@ -189,3 +195,41 @@ header .navbar {
 
 @media (max-width: 768px) {
 } */
+
+.menu-heading {
+  padding: 3rem;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.menu-item {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-item:hover {
+  size-adjust: 110%;
+  transition: 0.3s ease;
+}
+
+.menu-name {
+  font-size: 2rem;
+}
+
+.menu-price {
+  font-size: 1.5rem;
+}
+
+.menu-img {
+  width: 20rem;
+  height: 20rem;
+}

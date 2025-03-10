@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tuyển Dụng - Coffee Shop</title>
+    <link rel="stylesheet" href="../assets/css/recruitment.css" />
+  </head>
+  <body>
+    <div class="recruitment-container">
+      <h1>Gia Nhập Đội Ngũ Của Chúng Tôi</h1>
+      <p class="intro">
+        Chúng tôi đang tìm kiếm những cá nhân đam mê để gia nhập vào gia đình
+        Coffee Shop!
+      </p>
+
+      <div class="job-positions">
+        <div class="job-card">
+          <h2>Pha Chế (Barista)</h2>
+          <ul>
+            <li>Pha chế đồ uống chất lượng cao</li>
+            <li>Ưu tiên có kinh nghiệm pha chế</li>
+            <li>Làm việc toàn thời gian/bán thời gian</li>
+            <li>Lương: 4-6 triệu/tháng</li>
+          </ul>
+        </div>
+
+        <div class="job-card">
+          <h2>Nhân Viên Phục Vụ</h2>
+          <ul>
+            <li>Tiếp nhận đơn hàng và phục vụ khách hàng</li>
+            <li>Duy trì vệ sinh khu vực phục vụ</li>
+            <li>Làm việc toàn thời gian/bán thời gian</li>
+            <li>Lương: 3.5-5 triệu/tháng</li>
+          </ul>
+        </div>
+
+        <div class="job-card">
+          <h2>Quản Lý Cửa Hàng</h2>
+          <ul>
+            <li>Quản lý hoạt động hàng ngày</li>
+            <li>Quản lý nhân sự và lịch làm việc</li>
+            <li>Yêu cầu 2+ năm kinh nghiệm quản lý</li>
+            <li>Lương: 8-12 triệu/tháng</li>
+          </ul>
+        </div>
+
+        <div class="job-card">
+          <h2>Nhân Viên Bếp</h2>
+          <ul>
+            <li>Chuẩn bị đồ ăn và thức uống</li>
+            <li>Duy trì vệ sinh khu vực bếp</li>
+            <li>Làm việc toàn thời gian</li>
+            <li>Lương: 4-5.5 triệu/tháng</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="apply-section">
+        <h2>Cách Ứng Tuyển</h2>
+        <p>
+          Gửi CV và vị trí quan tâm về email:
+          <a href="mailto:careers@coffeeshop.com">careers@coffeeshop.com</a>
+        </p>
+        <p>Hoặc đến trực tiếp cửa hàng với CV của bạn!</p>
+
+        <div class="application-form">
+          <h3>Đơn Ứng Tuyển Nhanh</h3>
+          <form
+            action="https://formspree.io/f/mkgjwkor"
+            method="POST"
+            id="jobApplication"
+          >
+            <div class="form-group">
+              <input type="text" id="fullName" name="fullName" required />
+              <label for="fullName">Họ và Tên</label>
+            </div>
+
+            <div class="form-group">
+              <input type="email" id="email" name="email" required />
+              <label for="email">Địa Chỉ Email</label>
+            </div>
+
+            <div class="form-group">
+              <input type="tel" id="phone" name="phone" required />
+              <label for="phone">Số Điện Thoại</label>
+            </div>
+
+            <div class="form-group">
+              <select id="position" name="position" required>
+                <option value="">Chọn Vị Trí</option>
+                <option value="barista">Pha Chế (Barista)</option>
+                <option value="service">Nhân Viên Phục Vụ</option>
+                <option value="manager">Quản Lý Cửa Hàng</option>
+                <option value="kitchen">Nhân Viên Bếp</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <textarea
+                id="experience"
+                name="experience"
+                rows="4"
+                required
+              ></textarea>
+              <label for="experience">Chia sẻ kinh nghiệm của bạn</label>
+            </div>
+
+            <button type="submit" class="submit-btn">Gửi Đơn Ứng Tuyển</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
