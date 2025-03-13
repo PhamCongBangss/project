@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giỏ hàng - BangCoffee</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="cart-container">
+      <div class="cart-items">
+        <h2>Giỏ hàng của bạn</h2>
+        <div id="cartList"></div>
+        <div class="cart-total">
+          <span>Tổng cộng:</span>
+          <span id="totalPrice">0đ</span>
+        </div>
+      </div>
+
+      <div class="shipping-form">
+        <h2>Thông tin giao hàng</h2>
+        <form id="shippingForm">
+          <div class="form-group">
+            <label for="name">Họ và tên</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Số điện thoại</label>
+            <input type="tel" id="phone" required />
+          </div>
+          <div class="form-group">
+            <label for="address">Địa chỉ</label>
+            <textarea id="address" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="note">Ghi chú</label>
+            <textarea id="note"></textarea>
+          </div>
+          <button type="submit" class="checkout-btn">Đặt hàng</button>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="../assets/js/cart.js"></script>
+  </body>
+</html>

@@ -4,16 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chi tiết sản phẩm - Coffee Shop</title>
+    <link rel="stylesheet" href="../assets//css//style.css" />
     <link rel="stylesheet" href="../assets/css/product-detail.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="product-detail-container">
       <div id="productDetail" class="product-detail"></div>
     </div>
-    <script src="../assets/js/product-detail.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="module" src="../assets/js/product-detail.js"></script>
+    <a class="cart-icon-fixed" href="./cart.html">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="cart-counter">0</span>
+    </a>
+    <script>
+      AOS.init({
+        duration: 800,
+        offset: 100,
+        once: true,
+      });
+    </script>
   </body>
 </html>

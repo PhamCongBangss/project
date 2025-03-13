@@ -2,7 +2,11 @@ const menuItems = [
   {
     id: 1,
     name: "Americano",
-    price: 35000,
+    price: [
+      { size: "S", price: 35000 },
+      { size: "M", price: 40000 },
+      { size: "L", price: 45000 },
+    ],
     description: "Cà phê Espresso thêm nước nóng, giữ nguyên hương vị đậm đà",
     image: "../assets/img/Americano-nong.png",
     category: "coffee",
@@ -10,7 +14,11 @@ const menuItems = [
   {
     id: 2,
     name: "Cà phê đen",
-    price: 35000,
+    price: [
+      { size: "S", price: 35000 },
+      { size: "M", price: 40000 },
+      { size: "L", price: 45000 },
+    ],
     description: "Cà phê truyền thống được pha phin, đậm đà hương vị Việt Nam",
     image: "../assets/img/Ca-phe-den.png",
     category: "coffee",
@@ -18,7 +26,11 @@ const menuItems = [
   {
     id: 3,
     name: "Cà phê hạnh nhân",
-    price: 55000,
+    price: [
+      { size: "S", price: 55000 },
+      { size: "M", price: 60000 },
+      { size: "L", price: 65000 },
+    ],
     description: "Cà phê kết hợp với sữa hạnh nhân thơm béo, độc đáo",
     image: "../assets/img/Ca-phe-hanh-nhan.png",
     category: "coffee",
@@ -26,7 +38,11 @@ const menuItems = [
   {
     id: 4,
     name: "Cà phê sữa",
-    price: 40000,
+    price: [
+      { size: "S", price: 40000 },
+      { size: "M", price: 45000 },
+      { size: "L", price: 50000 },
+    ],
     description: "Cà phê phin truyền thống kết hợp với sữa đặc béo ngậy",
     image: "../assets/img/Ca-phe-sua.png",
     category: "coffee",
@@ -34,7 +50,11 @@ const menuItems = [
   {
     id: 5,
     name: "Caramel Macchiato",
-    price: 65000,
+    price: [
+      { size: "S", price: 65000 },
+      { size: "M", price: 70000 },
+      { size: "L", price: 75000 },
+    ],
     description:
       "Sự kết hợp tinh tế giữa sữa tươi, espresso và caramel ngọt ngào",
     image: "../assets/img/Caramel-macchiato-3.png",
@@ -67,7 +87,11 @@ const menuItems = [
   {
     id: 9,
     name: "Phô mai việt quất",
-    price: 42000,
+    price: [
+      { size: "S", price: 42000 },
+      { size: "M", price: 50000 },
+      { size: "L", price: 55000 },
+    ],
     description: "Bánh phô mai mềm mịn với việt quất tươi chua ngọt",
     image: "../assets/img/Pho-mai-viet-quat.png",
     category: "special",
@@ -75,7 +99,11 @@ const menuItems = [
   {
     id: 10,
     name: "Socola muối",
-    price: 62000,
+    price: [
+      { size: "S", price: 62000 },
+      { size: "M", price: 70000 },
+      { size: "L", price: 75000 },
+    ],
     description: "Bánh socola đậm đà với điểm nhấn vị muối độc đáo",
     image: "../assets/img/Socola-muoi.png",
     category: "special",
@@ -83,7 +111,11 @@ const menuItems = [
   {
     id: 11,
     name: "Sữa chua nha đam sả",
-    price: 65000,
+    price: [
+      { size: "S", price: 65000 },
+      { size: "M", price: 70000 },
+      { size: "L", price: 75000 },
+    ],
     description: "Sữa chua tươi với nha đam và hương sả thanh mát",
     image: "../assets/img/Sua-chua-nha-dam-sa.png",
     category: "special",
@@ -91,7 +123,11 @@ const menuItems = [
   {
     id: 12,
     name: "Hồng trà cam quế",
-    price: 55000,
+    price: [
+      { size: "S", price: 55000 },
+      { size: "M", price: 60000 },
+      { size: "L", price: 65000 },
+    ],
     description: "Hồng trà thơm với cam tươi và hương quế ấm áp",
     image: "../assets/img/Hong-tra-cam-que.png",
     category: "tea",
@@ -99,7 +135,11 @@ const menuItems = [
   {
     id: 13,
     name: "Trà đào cam sả",
-    price: 50000,
+    price: [
+      { size: "S", price: 50000 },
+      { size: "M", price: 55000 },
+      { size: "L", price: 60000 },
+    ],
     description: "Trà đào thơm ngọt, kết hợp với cam và sả tươi mát",
     image: "../assets/img/Tra-dao-cam-sa.png",
     category: "tea",
@@ -107,7 +147,11 @@ const menuItems = [
   {
     id: 14,
     name: "Trà oolong vải thiều",
-    price: 50000,
+    price: [
+      { size: "S", price: 50000 },
+      { size: "M", price: 55000 },
+      { size: "L", price: 60000 },
+    ],
     description: "Trà oolong hảo hạng với vải thiều thơm ngọt",
     image: "../assets/img/Tra-oolong-vai-thieu.png",
     category: "tea",
@@ -115,7 +159,11 @@ const menuItems = [
   {
     id: 15,
     name: "Trà xoài kem phô mai",
-    price: 55000,
+    price: [
+      { size: "S", price: 55000 },
+      { size: "M", price: 60000 },
+      { size: "L", price: 65000 },
+    ],
     description: "Trà xoài ngọt thanh topped với kem phô mai béo mịn",
     image: "../assets/img/Tra-xoai-kem-pho-mai.png",
     category: "tea",
@@ -123,7 +171,11 @@ const menuItems = [
   {
     id: 16,
     name: "Trà tứ quý long nhãn hạt sen",
-    price: 55000,
+    price: [
+      { size: "S", price: 55000 },
+      { size: "M", price: 60000 },
+      { size: "L", price: 65000 },
+    ],
     description: "Trà thượng hạng với long nhãn và hạt sen thanh nhẹ",
     image: "../assets/img/Tu-quy-long-nhan-hat-sen.png",
     category: "tea",
@@ -131,7 +183,11 @@ const menuItems = [
   {
     id: 17,
     name: "Trà tứ quý long nhãn hạt sen kem phô mai",
-    price: 65000,
+    price: [
+      { size: "S", price: 65000 },
+      { size: "M", price: 70000 },
+      { size: "L", price: 75000 },
+    ],
     description:
       "Trà tứ quý với long nhãn, hạt sen và lớp kem phô mai béo ngậy",
     image: "../assets/img/Tu-quy-long-nhan-hat-sen-KPM.png",
