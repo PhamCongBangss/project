@@ -20,29 +20,32 @@ body {
   line-height: 1.6;
 }
 
-header {
-  background: linear-gradient(to right, #001824, #00283e, #003852);
-  min-height: 10vh;
+.aboutus-banner {
+  background: linear-gradient(to right, #2d2d2d, #404040, #525252);
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.aboutus-heading {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  padding: 3rem;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutus-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
 }
 
 .recruitment-container {
   max-width: 1200px;
   margin: 50px auto;
   padding: 20px;
-}
-
-h1 {
-  text-align: center;
-  color: #2c3e50;
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
-.intro {
-  text-align: center;
-  font-size: 1.2em;
-  color: #666;
-  margin-bottom: 40px;
 }
 
 .job-positions {

@@ -3,13 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Về chúng tôi - Bang Coffee</title>
+    <link rel="stylesheet" href="../assets/css/aboutUs.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="icon"
       href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>"
     />
   </head>
   <body>
-    aboutUs
+    <div class="aboutus-banner">
+      <h1 class="aboutus-heading" data-aos="fade-down">Về chúng tôi</h1>
+      <p class="aboutus-subtitle" data-aos="fade-up">
+        Thương hiệu cà phê và đồ uống chất lượng cao
+      </p>
+    </div>
+
+    <div class="aboutus-container">
+      <section class="story-section" data-aos="fade-up">
+        <h2 class="story-title">Câu chuyện phụng sự</h2>
+        <div class="story-content">
+          <img
+            src="../assets/img/cau-chuyen-phung-su-1.jpg"
+            alt="Phụng sự"
+            class="story-image"
+          />
+          <div class="story-text">
+            <p>
+              Tại Bang Coffee, chúng tôi tin rằng mỗi tách cà phê là một cơ hội
+              để phục vụ và kết nối. Chúng tôi không chỉ đơn thuần bán cà phê,
+              mà còn mang đến những trải nghiệm đáng nhớ và giá trị cho cộng
+              đồng.
+            </p>
+            <p>
+              Với đội ngũ nhân viên tận tâm, chúng tôi luôn nỗ lực mang đến dịch
+              vụ tốt nhất, tạo nên không gian thân thiện và thoải mái cho mọi
+              khách hàng.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="story-section" data-aos="fade-up">
+        <h2 class="story-title">Câu chuyện cà phê</h2>
+        <div class="story-content">
+          <img
+            src="../assets/img/cafe.jpg"
+            alt="Câu chuyện cà phê"
+            class="story-image"
+          />
+          <div class="story-text">
+            <p>
+              Mỗi hạt cà phê tại Bang Coffee đều được chọn lọc kỹ lưỡng từ những
+              vùng nguyên liệu nổi tiếng. Chúng tôi tự hào về quy trình rang xay
+              thủ công, giữ trọn hương vị đặc trưng của từng loại hạt.
+            </p>
+            <p>
+              Với kinh nghiệm và đam mê, đội ngũ barista của chúng tôi luôn tạo
+              ra những tách cà phê hoàn hảo, mang đến trải nghiệm thưởng thức
+              tuyệt vời nhất.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="story-section" data-aos="fade-up">
+        <h2 class="story-title">Câu chuyện địa phương hóa</h2>
+        <div class="story-content">
+          <img
+            src="../assets/img/diaphuong.jpg"
+            alt="Địa phương hóa"
+            class="story-image"
+          />
+          <div class="story-text">
+            <p>
+              Bang Coffee tự hào là thương hiệu cà phê Việt Nam, mang đậm bản
+              sắc và văn hóa địa phương. Chúng tôi không ngừng sáng tạo để kết
+              hợp giữa truyền thống và hiện đại.
+            </p>
+            <p>
+              Bằng cách hợp tác với các nhà cung cấp địa phương và tạo việc làm
+              cho cộng đồng, chúng tôi góp phần vào sự phát triển bền vững của
+              ngành cà phê Việt Nam.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        offset: 100,
+        once: true,
+      });
+    </script>
+    <script type="module" src="../assets/js/aboutUs.js"></script>
   </body>
 </html>
