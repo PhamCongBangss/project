@@ -19,14 +19,39 @@ a {
 header {
   background: linear-gradient(to right, #001824, #00283e, #003852);
   min-height: 10vh;
+  position: relative;
+  z-index: 1000;
 }
 
+/* Update nav-menu styles in media query */
+@media (max-width: 768px) {
+  .nav-menu {
+    position: fixed; /* Change from absolute to fixed */
+    right: -1000%;
+    top: 8rem; /* Adjust this value as needed */
+    gap: 0;
+    flex-direction: column;
+    background: linear-gradient(to right, #001824, #00283e, #003852);
+    text-align: center;
+    padding: 2rem 0;
+    width: 30rem;
+    z-index: 999;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+}
 header .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 6rem 2rem 6rem;
   animation: slideInTopToBottom 2s forwards;
+}
+
+.menu-icon {
+  display: none;
 }
 
 .navbar .nav-logo .logo-text {
@@ -37,6 +62,8 @@ header .navbar {
 .navbar .nav-menu {
   display: flex;
   gap: 3rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar .nav-menu .nav-link {
@@ -142,6 +169,11 @@ header .navbar {
   scale: 1.1;
 }
 
+.hero-image {
+  position: relative;
+  z-index: 1;
+}
+
 .hero-image img {
   height: 60rem;
   width: 60rem;
@@ -180,38 +212,50 @@ header .navbar {
     opacity: 1;
   }
 }
-/* @media (min-width: 1025px) {
-  html {
-    font-size: 55%;
-  }
-} */
-
-@media (max-width: 992px) {
-  .title {
-    font-size: 3rem;
-  }
-
-  .subtitle {
-    font-size: 1.5rem;
-  }
-}
 
 @media (max-width: 768px) {
   .hero-content {
     flex-direction: column-reverse;
     text-align: center;
+    justify-content: center;
+  }
+
+  .menu-container {
+    position: relative;
+  }
+
+  .nav-menu {
+    position: absolute;
+    right: -1000%;
+    flex-direction: column;
+    background: linear-gradient(to right, #001824, #00283e, #003852);
+    text-align: center;
+    padding: 2rem 0;
+    width: 30rem;
+    top: 8rem;
+  }
+
+  .menu-icon {
+    display: block;
+    width: 4rem;
+    cursor: pointer;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-item {
+    margin: 1.6rem 0;
   }
 
   .hero-image {
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
   }
 
   .buttons {
     justify-content: center;
-  }
-
-  .title {
-    font-size: 2.5rem;
+    align-items: center;
   }
 }
 
