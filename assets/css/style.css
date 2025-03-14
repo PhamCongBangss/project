@@ -224,17 +224,6 @@ header .navbar {
     position: relative;
   }
 
-  .nav-menu {
-    position: absolute;
-    right: -1000%;
-    flex-direction: column;
-    background: linear-gradient(to right, #001824, #00283e, #003852);
-    text-align: center;
-    padding: 2rem 0;
-    width: 30rem;
-    top: 8rem;
-  }
-
   .menu-icon {
     display: block;
     width: 4rem;
@@ -242,11 +231,21 @@ header .navbar {
   }
 
   .nav-menu.active {
-    right: 0;
+    position: absolute;
+    flex-direction: column;
+    background: linear-gradient(to right, #001824, #00283e, #003852);
+    text-align: center;
+    padding: 2rem 0;
+    width: 30rem;
+    top: 8rem;
+    .nav-item {
+      display: block;
+    }
   }
 
   .nav-item {
     margin: 1.6rem 0;
+    display: none;
   }
 
   .hero-image {
