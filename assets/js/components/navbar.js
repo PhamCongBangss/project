@@ -2,7 +2,7 @@ export function createNavbar() {
   return `
     <header>
         <nav class="navbar">
-            <a class="nav-logo" href="#"><p class="logo-text">☕BangCoffee</p></a>
+            <a class="nav-logo" href="./homePage.html"><p class="logo-text">☕BangCoffee</p></a>
             <div class="nav-menu">
                 <div class="nav-item">
                     <a href="./homePage.html" class="nav-link">Trang chủ</a>

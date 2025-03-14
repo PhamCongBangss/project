@@ -26,6 +26,36 @@
   opacity: 0.9;
 }
 
+.menu-heading {
+  padding: 3rem;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.menu-item:hover {
+  size-adjust: 110%;
+  transition: 0.3s ease;
+}
+
+.menu-name {
+  font-size: 2rem;
+}
+
+.menu-price {
+  font-size: 1.5rem;
+}
+
+.menu-img {
+  width: 20rem;
+  height: 20rem;
+}
+
 .menu-items {
   display: grid;
   /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
@@ -37,6 +67,11 @@
 }
 
 .menu-item {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: white;
   border-radius: 20px;
   overflow: hidden;

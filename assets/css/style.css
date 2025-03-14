@@ -186,55 +186,57 @@ header .navbar {
   }
 } */
 
-/* @media (min-width: 769px) and (max-width: 1024px) {
-  html {
-    font-size: 45%;
+@media (max-width: 992px) {
+  .title {
+    font-size: 3rem;
   }
-}
 
-@media (min-width: 320px) and (max-width: 768px) {
-  html {
-    font-size: 40%;
+  .subtitle {
+    font-size: 1.5rem;
   }
 }
 
 @media (max-width: 768px) {
-} */
+  .hero-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
 
-.menu-heading {
-  padding: 3rem;
-  font-size: 5rem;
-  display: flex;
-  justify-content: center;
+  .hero-image {
+    margin-bottom: 30px;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
 }
 
-.menu-items {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
+@media (max-width: 480px) {
+  .hero {
+    padding: 30px 15px;
+  }
 
-.menu-item {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  .title {
+    font-size: 2rem;
+  }
 
-.menu-item:hover {
-  size-adjust: 110%;
-  transition: 0.3s ease;
-}
+  .subtitle {
+    font-size: 1.2rem;
+  }
 
-.menu-name {
-  font-size: 2rem;
-}
+  .description {
+    font-size: 1rem;
+  }
 
-.menu-price {
-  font-size: 1.5rem;
-}
+  .buttons {
+    flex-direction: column;
+  }
 
-.menu-img {
-  width: 20rem;
-  height: 20rem;
+  .buttons button {
+    width: 100%;
+  }
 }

@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const productId = parseInt(urlParams.get("id"));
   const product = menuItems.find((item) => item.id === productId);
   const cartCounter = document.querySelector(".cart-counter");
+  const title = document.querySelector("title");
+  title.innerText = `${product.name} -  Coffee`;
 
   document.body.insertAdjacentHTML("afterbegin", createNavbar());
 
@@ -57,10 +59,6 @@ document.addEventListener("DOMContentLoaded", () => {
                       <button class="add-to-cart">
                           <i class="fas fa-shopping-cart"></i>
                           Thêm vào giỏ hàng
-                      </button>
-
-                      <button class="buy-now">
-                          Mua ngay
                       </button>
                     </div>
                 </div>
