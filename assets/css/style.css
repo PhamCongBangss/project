@@ -23,25 +23,6 @@ header {
   z-index: 1000;
 }
 
-/* Update nav-menu styles in media query */
-@media (max-width: 768px) {
-  .nav-menu {
-    position: fixed; /* Change from absolute to fixed */
-    right: -1000%;
-    top: 8rem; /* Adjust this value as needed */
-    gap: 0;
-    flex-direction: column;
-    background: linear-gradient(to right, #001824, #00283e, #003852);
-    text-align: center;
-    padding: 2rem 0;
-    width: 30rem;
-    z-index: 999;
-  }
-
-  .nav-menu.active {
-    right: 0;
-  }
-}
 header .navbar {
   display: flex;
   justify-content: space-between;
@@ -231,7 +212,8 @@ header .navbar {
   }
 
   .nav-menu.active {
-    position: absolute;
+    position: fixed;
+    right: 0;
     flex-direction: column;
     background: linear-gradient(to right, #001824, #00283e, #003852);
     text-align: center;
