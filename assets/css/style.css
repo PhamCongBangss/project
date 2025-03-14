@@ -194,6 +194,13 @@ header .navbar {
   }
 }
 
+/* RESPONSIVE */
+@media (min-width: 769px) and (max-width: 1024px) {
+  html {
+    font-size: 45%;
+  }
+}
+
 @media (max-width: 768px) {
   .hero-content {
     flex-direction: column-reverse;
@@ -238,6 +245,13 @@ header .navbar {
     justify-content: center;
     align-items: center;
   }
+
+  .hero-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (max-width: 480px) {
@@ -263,5 +277,10 @@ header .navbar {
 
   .buttons button {
     width: 100%;
+  }
+
+  .hero-image img {
+    height: 30rem;
+    width: 30rem;
   }
 }

@@ -10,36 +10,22 @@
       rel="icon"
       href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <a class="nav-logo" href="#"><p class="logo-text">☕BangCoffee</p></a>
-        <div class="nav-menu">
-          <div class="nav-item">
-            <a href="./homePage.html" class="nav-link">Trang chủ</a>
-          </div>
-          <div class="nav-item">
-            <a href="aboutUs.html" class="nav-link">Về chúng tôi</a>
-          </div>
-          <div class="nav-item">
-            <a href="menu.html" class="nav-link">Thực đơn</a>
-          </div>
-          <div class="nav-item">
-            <a href="recruitment.html" class="nav-link">Tuyển dụng</a>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <div class="recruitment-container">
-      <h1>Gia Nhập Đội Ngũ Của Chúng Tôi</h1>
-      <p class="intro">
+    <div class="recruitment-container" data-aos="fade-up">
+      <h1 data-aos="fade-up" data-aos-delay="100">Gia Nhập Đội Ngũ Của Chúng Tôi</h1>
+      <p class="intro" data-aos="fade-up" data-aos-delay="200">
         Chúng tôi đang tìm kiếm những cá nhân đam mê để gia nhập vào gia đình
         Coffee Shop!
       </p>
 
       <div class="job-positions">
-        <div class="job-card">
+        <div class="job-card" data-aos="fade-up" data-aos-delay="300">
           <h2>Pha Chế (Barista)</h2>
           <ul>
             <li>Pha chế đồ uống chất lượng cao</li>
@@ -49,7 +35,7 @@
           </ul>
         </div>
 
-        <div class="job-card">
+        <div class="job-card" data-aos="fade-up" data-aos-delay="300">
           <h2>Nhân Viên Phục Vụ</h2>
           <ul>
             <li>Tiếp nhận đơn hàng và phục vụ khách hàng</li>
@@ -59,7 +45,7 @@
           </ul>
         </div>
 
-        <div class="job-card">
+        <div class="job-card" data-aos="fade-up" data-aos-delay="300">
           <h2>Quản Lý Cửa Hàng</h2>
           <ul>
             <li>Quản lý hoạt động hàng ngày</li>
@@ -69,7 +55,7 @@
           </ul>
         </div>
 
-        <div class="job-card">
+        <div class="job-card" data-aos="fade-up" data-aos-delay="300">
           <h2>Nhân Viên Bếp</h2>
           <ul>
             <li>Chuẩn bị đồ ăn và thức uống</li>
@@ -91,5 +77,16 @@
         </div>
       </div>
     </div>
+
+    <!-- Add AOS script before your other scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100,
+      });
+    </script>
+    <script type="module" src="../assets/js/recruitment.js"></script>
   </body>
 </html>
