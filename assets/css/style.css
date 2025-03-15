@@ -194,7 +194,6 @@ header .navbar {
   }
 }
 
-/* RESPONSIVE */
 @media (min-width: 769px) and (max-width: 1024px) {
   html {
     font-size: 45%;

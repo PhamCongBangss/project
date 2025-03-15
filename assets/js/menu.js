@@ -1,10 +1,8 @@
 import menuItems from "./data.js";
 import { createNavbar } from "./components/navbar.js";
-let cartCount = 0;
-const carts = [];
 const cartCounter = document.querySelector(".cart-counter");
 
-function createMenuItemHTML(item) {
+function createMenuItem(item) {
   const displayPrice = Array.isArray(item.price)
     ? item.price.find((p) => p.size === "S").price
     : item.price;
@@ -32,37 +30,12 @@ function createMenuItemHTML(item) {
     `;
 }
 
-function updateCartCounter() {
-  const counter = document.querySelector(".cart-counter");
-  counter.textContent = cartCount;
-}
-
-function addToCart(itemId) {
-  cartCount++;
-  updateCartCounter();
-  // You can add more cart functionality here
-  carts.push(itemId);
-  // Like storing items in localStorage
-}
-
 document.addEventListener("DOMContentLoaded", () => {
   document.body.insertAdjacentHTML("afterbegin", createNavbar());
   const menu = document.querySelector(".menu-icon");
-  menu.addEventListener("click", () => {
-    const nav = document.querySelector(".nav-menu");
-    nav.classList.toggle("active");
-  });
   renderMenuItems(menuItems);
   let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
   cartCounter.innerText = cartItems.length;
-
-  document.getElementById("menuContainer").addEventListener("click", (e) => {
-    if (e.target.closest(".order-btn")) {
-      const btn = e.target.closest(".order-btn");
-      const itemId = btn.dataset.id;
-      addToCart(itemId);
-    }
-  });
 
   document
     .getElementById("searchInput")
@@ -77,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function renderMenuItems(items) {
   const container = document.getElementById("menuContainer");
-  container.innerHTML = items.map((item) => createMenuItemHTML(item)).join("");
+  container.innerHTML = items.map((item) => createMenuItem(item)).join("");
 }
 
 function filterMenuItems() {

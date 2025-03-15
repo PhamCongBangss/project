@@ -16,7 +16,7 @@ function renderCart() {
   const cartList = document.getElementById("cartList");
   let total = 0;
 
-  const cartHTML = cartItems
+  const cart = cartItems
     .map((item, index) => {
       const product = menuItems.find((p) => p.id === item.id);
       const price = Array.isArray(product.price)
@@ -45,12 +45,11 @@ function renderCart() {
     })
     .join("");
 
-  cartList.innerHTML = cartHTML || "<p>Giỏ hàng trống</p>";
+  cartList.innerHTML = cart || "<p>Giỏ hàng trống</p>";
   document.getElementById(
     "totalPrice"
   ).textContent = `${total.toLocaleString()}đ`;
 
-  // Add event listeners for quantity controls and remove buttons
   document.querySelectorAll(".cart-item").forEach((item) => {
     const index = item.dataset.index;
 
@@ -84,19 +83,6 @@ function removeItem(index) {
 
 document.getElementById("shippingForm").addEventListener("submit", (e) => {
   e.preventDefault();
-  const orderData = {
-    items: JSON.parse(localStorage.getItem("cart")) || [],
-    customer: {
-      name: document.getElementById("name").value,
-      phone: document.getElementById("phone").value,
-      address: document.getElementById("address").value,
-      note: document.getElementById("note").value,
-    },
-    orderDate: new Date().toISOString(),
-  };
-
-  // Here you can handle the order (send to server, etc.)
-  console.log("Order placed:", orderData);
   const toast = document.createElement("div");
   toast.className = "toast";
   toast.innerHTML = `

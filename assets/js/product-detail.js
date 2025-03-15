@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const initialPrice = hasSizes ? product.price[0].price : product.price;
   let quantity = 1;
 
-  const productDetailHTML = `
+  const productDetail = `
             <div class="product-content" data-aos="fade-up">
                 <div class="product-image">
                     <img src="${product.image}" alt="${product.name}">
@@ -64,9 +64,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
             </div>
         `;
-  if (hasSizes) {
-  }
-  document.getElementById("productDetail").innerHTML = productDetailHTML;
+
+  document.getElementById("productDetail").innerHTML = productDetail;
   let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
   cartCounter.innerText = cartItems.length;
 
